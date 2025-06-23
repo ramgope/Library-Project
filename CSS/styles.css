@@ -15,12 +15,25 @@ li{
     list-style: none;
 }
 
+.purple{
+    color: #7342d6;
+}
+
+button{
+    cursor: pointer;
+}
+
 /* ========== Common CSS Ended ========== */
 
 /* ========== Nav Section Started ========== */
 
+#landing{
+    background-color: rgba(115, 66, 214, 0.1);
+}
+
 nav{
     height: 80px;
+    display: flex;
 }
 
 .nav__container{
@@ -64,3 +77,65 @@ nav{
 }
 
 /* ========== Nav Section Ended ========== */
+
+/* ========== Header Section Started ========== */
+
+header{
+    height: calc(100vh - 80px);
+}
+
+.header__container{
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 32px;
+}
+
+.header__description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-size: 56px;
+    color: #7342d6;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.btn{
+    background-color: #7342d6;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+button:active{
+    transform: translateY(1px);
+}
+
+.header__img--wrapper{
+    padding: 20px;
+}
+
+.header__img--wrapper img{
+    width: 100%;
+    height: 100%;
+    max-height: 50vh;
+    padding: 20px;
+}
+
+/* ========== Header Section Ended ========== */
